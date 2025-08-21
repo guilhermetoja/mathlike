@@ -1,8 +1,8 @@
 // Selecionar o gameNav (parte de cima da tela) e mudamos o texto e o tamanho da fonte
 
 const gameNav = document.querySelector(".mainGameNav");
-gameNav.innerHTML = "Math Like";
-gameNav.style.fontSize = "48px";
+gameNav.innerHTML = "Fase 1";
+gameNav.style.fontSize = "36px";
 
 // Selecionar as partes principais do jogo, area de jogo, deck e mao
 
