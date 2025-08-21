@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.mainGameContainer {
+  width: 1600px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 6fr 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainGameNav {
+  border: 1px solid black;
+
+  grid-area: 1 / 1 / 2 / 4;
+}
+.mainGameArea {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.mainGameDeckArea {
+  border: 1px solid black;
+
+  grid-area: 3 / 1 / 4 / 4;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.mainGameDeckAreaCards {
+  border: 1px solid black;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.mainGameDeckAreaDeck {
+  border: 1px solid black;
+
+  grid-area: 1 / 2 / 2 / 3;
+}
