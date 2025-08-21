@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+
+  background-color: #202124;
 }
 
 .mainGameContainer {
@@ -20,32 +22,42 @@ body {
 }
 
 .mainGameNav {
-  border: 1px solid black;
-
   grid-area: 1 / 1 / 2 / 4;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #5f6368;
 }
 .mainGameArea {
   grid-area: 2 / 1 / 3 / 4;
 }
 
 .mainGameDeckArea {
-  border: 1px solid black;
-
   grid-area: 3 / 1 / 4 / 4;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  background-color: #5f6368;
 }
 
 .mainGameDeckAreaCards {
-  border: 1px solid black;
   grid-area: 1 / 1 / 2 / 2;
 }
 
 .mainGameDeckAreaDeck {
-  border: 1px solid black;
-
   grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainGameDeckAreaDeck img:hover {
+  cursor: pointer;
+  scale: 1.01;
 }
